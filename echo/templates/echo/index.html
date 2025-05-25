@@ -11,9 +11,8 @@
     <input id="text-submit" type="button" value="Enter"/>
 
     <script>
-        var socket = new WebSocket(
-            'ws://' + window.location.host +
-            '/ws/?name=test&version=');
+        var socket = new WebSocket('ws://' + window.location.host + '/ws/');
+
 
         socket.onmessage = function(e) {
             var message = e.data;
